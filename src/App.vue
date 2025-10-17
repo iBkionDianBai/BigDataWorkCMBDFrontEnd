@@ -104,6 +104,11 @@ export default {
             icon: 'icon-tree-application-shape',
             url: 'example4',
           },
+          {
+            name: '仪表盘',
+            icon: 'icon-tree-application-shape',
+            url: 'DashBoard',
+          },
         ],
         id: '首页',
         toggle: false,
