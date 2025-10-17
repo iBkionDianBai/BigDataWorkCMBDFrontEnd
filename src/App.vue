@@ -94,6 +94,16 @@ export default {
             icon: 'icon-tree-group-shape',
             url: 'example2',
           },
+          {
+            name: '文件查询与备份',
+            icon: 'icon-tree-application-shape',
+            url: 'example3',
+          },
+          {
+            name: '备份记录',
+            icon: 'icon-tree-application-shape',
+            url: 'example4',
+          },
         ],
         id: '首页',
         toggle: false,

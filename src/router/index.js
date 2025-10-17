@@ -16,6 +16,10 @@ const Example1 = () => import(/* webpackChunkName: 'example1' */'@/views/example
 // import Example1 from '@/views/example1'
 const Example2 = () => import(/* webpackChunkName: 'example2' */'@/views/example2');
 // import Example2 from '@/views/example2'
+const Example3 = () => import(/* webpackChunkName: 'example3' */'@/views/example3');
+// import Example3 from '@/views/example3'
+const Example4 = () => import(/* webpackChunkName: 'example4' */'@/views/example4');
+// import Example4 from '@/views/example4'
 const NotFound = () => import(/* webpackChunkName: 'none' */'@/views/404');
 // import NotFound from '@/views/404'
 
@@ -43,6 +47,22 @@ const routes = [
         component: Example2,
         meta: {
           matchRoute: '登录信息',
+        },
+      },
+      {
+        path: 'example3',
+        name: 'example3',
+        component: Example3,
+        meta: {
+          matchRoute: '文件查询与备份',
+        },
+      },
+      {
+        path: 'example4',
+        name: 'example4',
+        component: Example4,
+        meta: {
+          matchRoute: '备份记录',
         },
       },
     ],
