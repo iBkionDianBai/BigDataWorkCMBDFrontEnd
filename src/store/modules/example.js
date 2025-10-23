@@ -61,5 +61,10 @@ export default {
       const url = BACKEND_API_PREFIX+`/backup-file?${queryString.stringify(params)}`;
       return http.get(url, {}, config);
     },
+    // 查询备份记录
+    getBackupRecord(context, params, config = {}) {
+      // eslint-disable-next-line no-undef
+      return http.get(BACKEND_API_PREFIX+`/backup-record`, params, config);
+    },
   },
 };
