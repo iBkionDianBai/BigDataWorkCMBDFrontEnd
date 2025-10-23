@@ -49,6 +49,12 @@ export default {
       const url = BACKEND_API_PREFIX+`/host-detail?${queryString.stringify(params)}`;
       return http.get(url, {}, config);
     },
+    // 根据传入的主机ID列表、文件目录和文件后缀，查询主机上符合条件的文件
+    searchFile(context, params, config = {}) {
+      // eslint-disable-next-line no-undef
+      const url = BACKEND_API_PREFIX+`/search-file?${queryString.stringify(params)}`;
+      return http.get(url, {}, config);
+    },
     // 根据传入的主机ID和文件信息，备份符合要求的文件到指定目录
     backupFile(context, params, config = {}) {
       // eslint-disable-next-line no-undef
