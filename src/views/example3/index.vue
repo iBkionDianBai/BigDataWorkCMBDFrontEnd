@@ -62,6 +62,7 @@
   </div>
 </template>
 
+
 <script>
 
 export default {
@@ -84,7 +85,7 @@ export default {
   },
   methods: {
     async searchHosts() {
-      const data = { bk_biz_id: 3 };
+      const data = { bk_biz_id: 2 };
       const hostRes = await this.$store.dispatch('example/getHostsData', data, { fromCache: true });
       // 对可用主机做筛选
       this.hostList = hostRes.data.info.filter(host => host.bk_host_id >= 865 && host.bk_host_id <= 869);
@@ -199,4 +200,6 @@ export default {
   },
 };
 </script>
+
+
 
