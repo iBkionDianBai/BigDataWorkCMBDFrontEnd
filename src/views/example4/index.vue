@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     async getBackupRecord() {
-      const res = await this.$store.dispatch('example/getBackupRecord', {}, { fromCache: true });
+      const res = await this.$store.dispatch('example/getBackupRecord', {}, { fromCache: false });
       this.recordData = res.data;
       // TODO：参照bk-table组件文档，实现分页操作
     },

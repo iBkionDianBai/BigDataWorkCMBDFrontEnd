@@ -196,7 +196,9 @@ export default {
       };
       this.$bkMessage(config);
     },
+
   },
+
 };
 </script>
 
